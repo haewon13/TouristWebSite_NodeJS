@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>호텔</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Jua|Nanum+Gothic&display=swap&subset=korean"
+        rel="stylesheet">
+    <style>
+        p {
+            margin: 20px 0px;
+        }
+
+        p1 {
+            font-family: 'Do Hyeon', sans-serif;
+            font-size: 30px;
+            color: chocolate;
+        }
+
+        p2 {
+      font-family: 'Jua', sans-serif;
+      font-size: 45px;
+      color: #e68f0c;
+    }
+
+    p3 {
+      font-family: 'Jua', sans-serif;
+      font-size: 30px;
+      color: #e4ded7;
+    }
+
+        p4 {
+            font-family: 'Do Hyeon', sans-serif;
+            font-size: 20px;
+            color: navy;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <P3>TEAM06 - KUICK</P3>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link"> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <ol class="breadcrumb">
+                    <li class="breadcrumb-item" style="font-family : 'Jua'; font-size:22px; padding-left: 20px;"><a href="/home">홈</a></li>
+                    <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/city">도시별 여행지</a></li>
+                    <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/agency">여행사</a></li>
+                    <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/restaurant">식당</a></li>
+                    <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/festival">축제</a></li>
+                    <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/hotel">호텔</a></li>
+                
+                  </ol>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#info">호텔 검색</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#comment">호텔 후기</a>
+        </li>
+
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade" id="info">
+            <br>&emsp;&emsp;<p1><%= name %> 님, 원하는 호텔을 검색하세요</p1>
+            <form class="form-inline my-2 my-lg-0" action="/hotel2" method="POST" novalidate>
+                &emsp;&emsp;<input class="form-control mr-sm-2" type="text" placeholder="Search" name="search_comment">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">검색</button>
+            </form><br>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">호텔 이름</th>
+                        <th scope="col">시도</th>
+                        <th scope="col">주소</th>
+                        <th scope="col">홈페이지</th>
+                        <th scope="col">전화번호</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for(var i=0; i<results.length; i++){ %>
+                    <tr class="table-primary">
+                        <th scope="row"><%= results[i].name%></th>
+                        <td><%= results[i].city_name%></td>
+                        <td><%= results[i].address%></td>
+                        <td><a href=<%= results[i].website%>><%= results[i].website%></a></td>
+                        <td><%= results[i].tel%></td>
+                    </tr>
+                    <% } %>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="tab-pane fade active show" id="comment">
+            <br>&emsp;&emsp;<p1><%= name %> 님, 후기를 보고싶은 호텔을 검색하세요</p1>
+            <form class="form-inline my-2 my-lg-0" action="/hotel1" method="POST" novalidate>
+                &emsp;&emsp;<input class="form-control mr-sm-2" type="text" placeholder="Search" name="search_comment">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">검색</button>&emsp;
+                <button type="button" class="btn btn-warning" name="btn"
+                    onclick="$('body,html').animate({scrollTop:$('body').height()},150);">후기 쓰기</button>
+            </form><br>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">호텔 이름</th>
+                        <th scope="col">사용자</th>
+                        <th scope="col">후기</th>
+                        <th scope="col">점수</th>
+                        <th scope="col">수정/삭제</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for(var i=0; i<results2.length; i++){ %>
+                    <% if(results2[i].user_id == name) { %>
+                    
+                        <tr class="table-primary">
+                            <th scope="row"><a id="name" value="abcs"><%= results2[i].name%></a></th>
+                            <td><%= results2[i].user_id%></td>
+                            <td><%= results2[i].comment%></td>
+                            <td><%= results2[i].score%></td>
+                            <td>
+                                <form action="/hotel_del" id="fm" method="POST">
+                                    <input type="hidden" name="n1" value="<%= results2[i].name%>">
+                                    <input type="hidden" name="n2" value="<%= results2[i].user_id%>">
+                                    <input type="hidden" name="n3" value="<%= results2[i].comment%>">
+                                    <input type="hidden" name="n4" value="<%= results2[i].score%>">
+                                    <button type="submit" class="btn btn-primary btn-sm" onclick="$('body,html').animate({scrollTop:$('body').height()},150); document.getElementsByName('hotelname')[0].value=document.getElementsByName('n1')[0].value;  document.getElementsByName('comment')[0].value=document.getElementsByName('n3')[0].value; document.getElementsByName('score')[0].value=document.getElementsByName('n4')[0].value;">수정</button>
+                                <button type="submit" class="btn btn-primary btn-sm" ;
+                                    onclick="window.location.reload()">삭제</button></form>
+                            </td>
+                        </tr>
+                  
+                    <% } %>
+                    <% if(results2[i].user_id != name) { %>
+                    <tr class="table-primary">
+                        <th scope="row"><%= results2[i].name%></th>
+                        <td><%= results2[i].user_id%></td>
+                        <td><%= results2[i].comment%></td>
+                        <td><%= results2[i].score%></td>
+                        <td></td>
+                    </tr>
+                    <% } %>
+                    <% } %>
+                </tbody>
+            </table>
+            <div class="card border-primary mb-3" style="max-width: 80rem;">
+                    <form id="bottom" action="/hotel3" method="POST" novalidate>
+                        <fieldset>
+                            &emsp;&emsp;<p1>후기를 작성해주세요</p1>
+                            <div class="form-group row">
+                                &emsp;&emsp;<p4>USER ID</p4>&emsp;&emsp;&emsp;
+                                <div class="col-sm-13">
+                                    <%= name %>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                &emsp;<p4>방문했던 호텔이름을 작성해주세요</p4>
+                                <input type="text" class="form-control" name="hotelname" placeholder="hotel name">
+                            </div>
+                            <div class="form-group">
+                                &emsp;<p4>1~5점으로 점수를 선택해주세요</p4>
+                                &emsp;&emsp;<select class="form-control" name="score">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                &emsp;<p4>COMMENT</p4>&emsp;&emsp;&emsp;&emsp;
+                                <textarea class="form-control" name="comment" rows="2"></textarea>
+                            </div>
+                            &emsp;<button type="submit" class="btn btn-primary" onClick="window.location.reload()"">후기 등록</button>
+                            <br><br>
+                        </fieldset>
+                    </form>
+            </div>
+
+        </div>
+
+    </div>
+<script language=" javascript">
+    if (self.name != 'reload') {
+        self.name = 'reload';
+        self.location.reload(true);
+    }
+    else self.name = "";
+</script>
+
+</body>
+
+</html>

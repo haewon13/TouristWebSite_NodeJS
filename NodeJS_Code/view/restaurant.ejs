@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>식당</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Jua|Nanum+Gothic&display=swap&subset=korean"
+        rel="stylesheet">
+    <style>
+        p {
+            margin: 20px 0px;
+        }
+
+        p1 {
+            font-family: 'Do Hyeon', sans-serif;
+            font-size: 30px;
+            color: chocolate;
+        }
+
+        p2 {
+            font-family: 'Jua', sans-serif;
+            font-size: 45px;
+            color: #e68f0c;
+        }
+        p3 {
+            font-family: 'Jua', sans-serif;
+            font-size: 30px;
+            color: #e4ded7;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <P3>TEAM06 - KUICK</P3>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link"> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <ol class="breadcrumb">
+                    <li class="breadcrumb-item" style="font-family : 'Jua'; font-size:22px; padding-left: 20px;"><a href="/home">홈</a></li>
+                    <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/city">도시별 여행지</a></li>
+                    <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/agency">여행사</a></li>
+                    <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/restaurant">식당</a></li>
+                    <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/festival">축제</a></li>
+                    <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/hotel">호텔</a></li>
+                
+                  </ol>
+
+
+
+            <br>&emsp;&emsp;<p1><%= name %> 님,원하는 식당을 검색하세요</p1>
+            <form class="form-inline my-2 my-lg-0" action="/restaurant" method="POST" novalidate>
+                &emsp;&emsp;<input class="form-control mr-sm-2" type="text" placeholder="Search" name="rest_place">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">검색</button>
+                
+              </form>
+             <br>
+             <div style="margin-left: 1650px;">
+             &emsp;&emsp;<button class="cal" style=" color: #fff; padding: 0.375rem 0.75rem; background-color: #593196; border-color: #593196;">관리자용</button>
+             &emsp;<button class="cal1" style=" color: #fff; padding: 0.375rem 0.75rem; background-color: #593196; border-color: #593196;">삭제</button>
+            </div>
+                   <script type = "text/javascript">
+                        //console.log("HIIIIIII");
+                        document.querySelector('.cal').addEventListener('click', function(){
+                          //console.log(req.session.role);
+                           openManager('http://localhost:3000/manager');
+                       })
+
+                       function openManager(url){
+                           
+                           window.open(url, "관리자용");
+
+                       }
+                       document.querySelector('.cal1').addEventListener('click', function(){
+                          //console.log(req.session.role);
+                           openManager('http://localhost:3000/managerDelete');
+                       })
+
+                       function openManager(url){
+                           
+                           window.open(url, "삭제");
+
+                       }
+                   </script>
+                
+                   <br>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                      <th scope="col">도/시</th>
+                      <th scope="col">주변 관광지</th>
+                      <th scope="col">음식점명</th>
+                      <th scope="col">음식종류</th>
+                      <th scope="col">가격</th>
+                      <th scope="col">주소</th>
+                      <th scope="col">리뷰수</th>
+                    </tr>
+                </thead>
+                <tbody>
+                 <% for(var i=0; i<rows.length; i++){ %>
+                    <tr class="table-primary">
+                        <th scope="row"><%= rows[i].city%></th>
+                        <td><%= rows[i].tour_name%></td>
+                        <td><%= rows[i].name%></td>
+                        <td><%= rows[i].foodtype%></td>
+                        <td><%= rows[i].price%></td>
+                        <td><%= rows[i].address%></td>
+                        <td><%= rows[i].reviewNum%></td>
+                    </tr>
+                    <% } %>
+                </tbody>
+            </table>
+            <br>
+            <br>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                      <th scope="col">관광지</th>
+                      <th scope="col"> 관광지별 총 음식점 리뷰 수 </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                   <% for(var i=0; i<rows2.length; i++){ %>
+                      <tr>
+                        <td><%= rows2[i].name%></td>
+                        <td><%= rows2[i].reviewNum%></td>
+                      </tr>
+                      <% } %>
+                    </tbody>
+                </table>
+
+
+
+
+</body>
+
+</html>

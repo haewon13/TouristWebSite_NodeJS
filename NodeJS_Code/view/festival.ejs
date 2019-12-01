@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>축제</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Jua|Nanum+Gothic&display=swap&subset=korean"
+        rel="stylesheet">
+    <style>
+        p {
+            margin: 20px 0px;
+        }
+
+        p1 {
+            font-family: 'Do Hyeon', sans-serif;
+            font-size: 30px;
+            color: chocolate;
+        }
+        p2 {
+            font-family: 'Jua', sans-serif;
+            font-size: 45px;
+            color: #e68f0c;
+        }
+        p3 {
+            font-family: 'Jua', sans-serif;
+            font-size: 30px;
+            color: #e4ded7;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <P3>TEAM06 - KUICK</P3>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link"> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <ol class="breadcrumb">
+                    <li class="breadcrumb-item" style="font-family : 'Jua'; font-size:22px; padding-left: 20px;"><a href="/home">홈</a></li>
+                    <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/city">도시별 여행지</a></li>
+                    <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/agency">여행사</a></li>
+                    <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/restaurant">식당</a></li>
+                    <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/festival">축제</a></li>
+                    <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/hotel">호텔</a></li>
+                
+                  </ol>
+
+            <br>&emsp;&emsp;<p1><%= name %> 님, 축제/행사를 보고 싶은 도/시를 입력하세요</p1>
+            <form class="form-inline my-2 my-lg-0" action="/festival" method="POST" novalidate>
+                &emsp;&emsp;<input class="form-control mr-sm-2" type="text" placeholder="Search" name="fest_place">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">검색</button>
+            </form><br>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                      <th scope="col">축제명</th>
+                      <th scope="col">도/시</th>
+                      <th scope="col">일시</th>
+                      <th scope="col">가격</th>
+                      <th scope="col">설명</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <% for(var i=0; i<rows.length; i++){ %>
+                    <tr class="table-primary">
+                      <td><%= rows[i].fest_name%></td>
+                      <td><%= rows[i].name%></td>
+                      <td><%= rows[i].date%></td>
+                      <td><%= rows[i].price%></td>
+                      <td><%= rows[i].exp%></td>
+                    </tr>
+                    <% } %>
+                </tbody>
+            </table>
+
+
+</body>
+
+</html>

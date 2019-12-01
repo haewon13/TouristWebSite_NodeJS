@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>도시 검색</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Jua|Nanum+Gothic&display=swap&subset=korean"
+    rel="stylesheet">
+  <style>
+    p {
+      margin: 20px 0px;
+    }
+
+    p1 {
+      font-family: 'Do Hyeon', sans-serif;
+      font-size: 32px;
+      color: #2f2398;
+    }
+
+    p2 {
+      font-family: 'Jua', sans-serif;
+      font-size: 45px;
+      color: #e68f0c;
+    }
+
+    p3 {
+      font-family: 'Jua', sans-serif;
+      font-size: 30px;
+      color: #e4ded7;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <P3>TEAM06 - KUICK</P3>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link"> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <ol class="breadcrumb">
+            <li class="breadcrumb-item" style="font-family : 'Jua'; font-size:22px; padding-left: 20px;"><a href="/home">홈</a></li>
+            <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/city">도시별 여행지</a></li>
+            <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/agency">여행사</a></li>
+            <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/restaurant">식당</a></li>
+            <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/festival">축제</a></li>
+            <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/hotel">호텔</a></li>
+        
+          </ol>
+  <br>
+  <div style="text-align:center">
+      <p2>
+    <알고싶은 도시별 관광지를 클릭해보세요>
+  </p2>
+  </div>
+  <br>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<p1>서울시</p1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[0].name%> <br>
+    전화번호 : <%= results[0].phone_num%> <br>
+    휴무일 : <%=results[0].holiday%> <br>
+    입장료 : <%=results[0].ticket%><br>
+    오픈/폐장시간 : <%=results[0].open_closed%> <br>
+    홈페이지 : <%=results[0].website%> <br>" data-original-title=<%= results[0].name %>><img src="img/1-1.jpg"
+      width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[1].name%> <br>
+        전화번호 : <%= results[1].phone_num%> <br>
+        휴무일 : <%=results[1].holiday%> <br>
+        입장료 : <%=results[1].ticket%><br>
+        오픈/폐장시간 : <%=results[1].open_closed%> <br>
+        홈페이지 : <%=results[1].website%> <br>" data-original-title=<%= results[1].name %>><img src="img/1-2.jpg"
+      width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[0].name%> <br>
+            전화번호 : <%= results[2].phone_num%> <br>
+            휴무일 : <%=results[2].holiday%> <br>
+            입장료 : <%=results[2].ticket%><br>
+            오픈/폐장시간 : <%=results[2].open_closed%> <br>
+            홈페이지 : <%=results[2].website%> <br>" data-original-title=<%= results[2].name %>><img src="img/1-3.jpg"
+      width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[3].name%> <br>
+                전화번호 : <%= results[3].phone_num%> <br>
+                휴무일 : <%=results[3].holiday%> <br>
+                입장료 : <%=results[3].ticket%><br>
+                오픈/폐장시간 : <%=results[3].open_closed%> <br>
+                홈페이지 : <%=results[3].website%> <br>" data-original-title=<%= results[3].name %>><img src="img/1-4.jpg"
+      width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[4].name%> <br>
+                    전화번호 : <%= results[4].phone_num%> <br>
+                    휴무일 : <%=results[4].holiday%> <br>
+                    입장료 : <%=results[4].ticket%><br>
+                    오픈/폐장시간 : <%=results[4].open_closed%> <br>
+                    홈페이지 : <%=results[4].website%> <br>" data-original-title=<%= results[4].name %>><img
+      src="img/1-5.jpg" width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[5].name%> <br>
+                        전화번호 : <%= results[5].phone_num%> <br>
+                        휴무일 : <%=results[5].holiday%> <br>
+                        입장료 : <%=results[5].ticket%><br>
+                        오픈/폐장시간 : <%=results[5].open_closed%> <br>
+                        홈페이지 : <%=results[5].website%> <br>" data-original-title=<%= results[5].name %>><img
+      src="img/1-6.jpg" width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+
+  <br><br>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<p1>경기도 </p1>&emsp;&emsp;&emsp;&emsp;&emsp;
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[7].name%> <br>
+    전화번호 : <%= results[7].phone_num%> <br>
+    휴무일 : <%=results[7].holiday%> <br>
+    입장료 : <%=results[7].ticket%><br>
+    오픈/폐장시간 : <%=results[7].open_closed%> <br>
+    홈페이지 : <%=results[7].website%> <br>" data-original-title=<%= results[7].name %>><img src="img/2-1.jpg"
+      width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[9].name%> <br>
+        전화번호 : <%= results[9].phone_num%> <br>
+        휴무일 : <%=results[9].holiday%> <br>
+        입장료 : <%=results[9].ticket%><br>
+        오픈/폐장시간 : <%=results[9].open_closed%> <br>
+        홈페이지 : <%=results[9].website%> <br>" data-original-title=<%= results[9].name %>><img src="img/2-2.jpg"
+      width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[11].name%> <br>
+            전화번호 : <%= results[11].phone_num%> <br>
+            휴무일 : <%=results[11].holiday%> <br>
+            입장료 : <%=results[11].ticket%><br>
+            오픈/폐장시간 : <%=results[11].open_closed%> <br>
+            홈페이지 : <%=results[11].website%> <br>" data-original-title=<%= results[11].name %>><img src="img/2-3.jpg"
+      width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[12].name%> <br>
+                전화번호 : <%= results[12].phone_num%> <br>
+                휴무일 : <%=results[12].holiday%> <br>
+                입장료 : <%=results[12].ticket%><br>
+                오픈/폐장시간 : <%=results[12].open_closed%> <br>
+                홈페이지 : <%=results[12].website%> <br>" data-original-title=<%= results[12].name %>><img
+      src="img/2-4.gif" width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[13].name%> <br>
+                    전화번호 : <%= results[13].phone_num%> <br>
+                    휴무일 : <%=results[13].holiday%> <br>
+                    입장료 : <%=results[13].ticket%><br>
+                    오픈/폐장시간 : <%=results[13].open_closed%> <br>
+                    홈페이지 : <%=results[13].website%> <br>" data-original-title=<%= results[13].name %>><img
+      src="img/2-5.jpg" width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+  <br><br>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<p1>제주도 </p1>&emsp;&emsp;&emsp;&emsp;&emsp;
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[26].name%> <br>
+        전화번호 : <%= results[26].phone_num%> <br>
+        휴무일 : <%=results[26].holiday%> <br>
+        입장료 : <%=results[26].ticket%><br>
+        오픈/폐장시간 : <%=results[26].open_closed%> <br>
+        홈페이지 : <%=results[26].website%> <br>" data-original-title=<%= results[26].name %>><img src="img/5-1.jpg"
+      width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[27].name%> <br>
+            전화번호 : <%= results[27].phone_num%> <br>
+            휴무일 : <%=results[27].holiday%> <br>
+            입장료 : <%=results[27].ticket%><br>
+            오픈/폐장시간 : <%=results[27].open_closed%> <br>
+            홈페이지 : <%=results[27].website%> <br>" data-original-title=<%= results[27].name %>><img src="img/5-2.jpg"
+      width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[28].name%> <br>
+                전화번호 : <%= results[28].phone_num%> <br>
+                휴무일 : <%=results[28].holiday%> <br>
+                입장료 : <%=results[28].ticket%><br>
+                오픈/폐장시간 : <%=results[28].open_closed%> <br>
+                홈페이지 : <%=results[28].website%> <br>" data-original-title=<%= results[28].name %>><img
+      src="img/5-3.jpg" width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[24].name%> <br>
+                    전화번호 : <%= results[24].phone_num%> <br>
+                    휴무일 : <%=results[24].holiday%> <br>
+                    입장료 : <%=results[24].ticket%><br>
+                    오픈/폐장시간 : <%=results[24].open_closed%> <br>
+                    홈페이지 : <%=results[24].website%> <br>" data-original-title=<%= results[24].name %>><img
+      src="img/5-4.jpg" width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[29].name%> <br>
+                      전화번호 : <%= results[29].phone_num%> <br>
+                      휴무일 : <%=results[29].holiday%> <br>
+                      입장료 : <%=results[29].ticket%><br>
+                      오픈/폐장시간 : <%=results[29].open_closed%> <br>
+                      홈페이지 : <%=results[29].website%> <br>" data-original-title=<%= results[29].name %>><img
+      src="img/5-5.jpg" width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[25].name%> <br>
+                        전화번호 : <%= results[25].phone_num%> <br>
+                        휴무일 : <%=results[25].holiday%> <br>
+                        입장료 : <%=results[25].ticket%><br>
+                        오픈/폐장시간 : <%=results[25].open_closed%> <br>
+                        홈페이지 : <%=results[25].website%> <br>" data-original-title=<%= results[25].name %>><img
+      src="img/5-6.jpg" width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+
+  <br><br>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<p1>강원도 </p1>&emsp;&emsp;&emsp;&emsp;&emsp;
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[14].name%> <br>
+    전화번호 : <%= results[14].phone_num%> <br>
+    휴무일 : <%=results[14].holiday%> <br>
+    입장료 : <%=results[14].ticket%><br>
+    오픈/폐장시간 : <%=results[14].open_closed%> <br>
+    홈페이지 : <%=results[14].website%> <br>" data-original-title=<%= results[14].name %>><img src="img/3-1.jpg"
+      width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[15].name%> <br>
+        전화번호 : <%= results[15].phone_num%> <br>
+        휴무일 : <%=results[15].holiday%> <br>
+        입장료 : <%=results[15].ticket%><br>
+        오픈/폐장시간 : <%=results[15].open_closed%> <br>
+        홈페이지 : <%=results[15].website%> <br>" data-original-title=<%= results[15].name %>><img src="img/3-2.jpg"
+      width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[16].name%> <br>
+            전화번호 : <%= results[16].phone_num%> <br>
+            휴무일 : <%=results[16].holiday%> <br>
+            입장료 : <%=results[16].ticket%><br>
+            오픈/폐장시간 : <%=results[16].open_closed%> <br>
+            홈페이지 : <%=results[16].website%> <br>" data-original-title=<%= results[16].name %>><img src="img/3-3.jpg"
+      width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+
+  <br><br>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<p1>경상북도 </p1>&emsp;&emsp;&emsp;&emsp;&emsp;
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[20].name%> <br>
+        전화번호 : <%= results[20].phone_num%> <br>
+        휴무일 : <%=results[20].holiday%> <br>
+        입장료 : <%=results[20].ticket%><br>
+        오픈/폐장시간 : <%=results[20].open_closed%> <br>
+        홈페이지 : <%=results[20].website%> <br>" data-original-title=<%= results[20].name %>><img src="img/4-1.jpg"
+      width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[21].name%> <br>
+            전화번호 : <%= results[21].phone_num%> <br>
+            휴무일 : <%=results[21].holiday%> <br>
+            입장료 : <%=results[21].ticket%><br>
+            오픈/폐장시간 : <%=results[21].open_closed%> <br>
+            홈페이지 : <%=results[21].website%> <br>" data-original-title=<%= results[21].name %>><img src="img/4-2.jpg"
+      width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[22].name%> <br>
+                전화번호 : <%= results[22].phone_num%> <br>
+                휴무일 : <%=results[22].holiday%> <br>
+                입장료 : <%=results[22].ticket%><br>
+                오픈/폐장시간 : <%=results[22].open_closed%> <br>
+                홈페이지 : <%=results[22].website%> <br>" data-original-title=<%= results[22].name %>><img
+      src="img/4-3.jpg" width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+  <button type="button" class="btn btn-primary-outline" title="" data-container="body" data-toggle="popover"
+    data-placement="top" data-html="true" data-content="장소 : <%=results[23].name%> <br>
+                    전화번호 : <%= results[23].phone_num%> <br>
+                    휴무일 : <%=results[23].holiday%> <br>
+                    입장료 : <%=results[23].ticket%><br>
+                    오픈/폐장시간 : <%=results[23].open_closed%> <br>
+                    홈페이지 : <%=results[23].website%> <br>" data-original-title=<%= results[23].name %>><img
+      src="img/4-4.jpg" width="200px" height="200px" style="border-radius: 50%; border: outset purple;"></button>
+
+
+
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
+
+
+</body>
+
+</html>

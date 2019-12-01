@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>홈 페이지</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Jua|Nanum+Gothic&display=swap&subset=korean"
+        rel="stylesheet">
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        p {
+            margin: 20px 0px;
+        }
+
+        p1 {
+            font-family: 'Do Hyeon', sans-serif;
+            font-size: 30px;
+            color: blueviolet;
+        }
+
+        p2 {
+            font-family: 'Jua', sans-serif;
+            font-size: 45px;
+            color: #e68f0c;
+        }
+
+        p3 {
+            font-family: 'Jua', sans-serif;
+            font-size: 30px;
+            color: #e4ded7;
+        }
+
+        div.box_frame {
+            float: left;
+            background-color: #eee;
+            /* standard background color */
+            border-style: none;
+            border-radius: 11px;
+            padding: 2px;
+            margin-left: 4%;
+            text-align: center;
+            /* change border to be inside the box */
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        div.box_frame:first-child {
+            margin-left: 0;
+        }
+
+        div.box_frame#_15 {
+            /* width 15% */
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <P3>TEAM06 - KUICK</P3>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link"> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item" style="font-family : 'Jua'; font-size:22px; padding-left: 20px;"><a
+                href="/home">홈</a></li>
+        <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a href="/city">도시별
+                여행지</a></li>
+        <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a
+                href="/agency">여행사</a></li>
+        <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a
+                href="/restaurant">식당</a></li>
+        <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a
+                href="/festival">축제</a></li>
+        <li class="breadcrumb-item" style="font-family : 'Jua';font-size:22px; padding-left: 20px;"> <a
+                href="/hotel">호텔</a></li>
+
+    </ol>
+    <div style="text-align:center">
+        <br>
+        <p2>
+            가보고 싶은 관광지에 대해 알아보세요!<br>
+        </p2>
+    </div>
+
+
+    <div class="row">
+        <div class="col">
+            <br>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#search" style="font-weight:bold">관광지 찾기</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#review" style="font-weight:bold">관광지 후기</a>
+                </li>
+
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="search">
+                    <p>
+                        <div style="text-align:center">
+
+                            <span style="font-family: 'Jua', serif; font-size: 1.7em;  color: darkblue;" align="center">
+                                <%= name %> 님, 찾고 싶은 관광지를 입력해주세요<br>
+                            </span>
+                        </div>
+                        <br>
+                        <div class="form-group row">
+                            <div class="col-7 mx-auto">
+                                <center>
+                                    <form href="/home" method="POST">
+                                        <input type="text" name="place" placeholder="관광지명"
+                                            style="font-family: 'Noto Serif KR', serif; ">
+                                        <button type="submit" class="btn btn-primary">
+                                            검색</button>
+                                    </form>
+                                </center>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="section_zone">
+                            <div class="box_frame" id="_15">
+                                <br>
+                                <span
+                                    style="font-family: 'Jua', serif; font-weight: bold; font-size: 1.5em;  color: black;"
+                                    align="center">
+                                    대표 Ex1. 경복궁 <br><br>
+                                </span>
+                                <img src="img/seoul_kyeongbeok.jpg" width=200 style="border-radius: 0.5em"><br><br>
+                                <span style="font-family: 'Jua', serif;font-size: 1.2em;  color: black;" align="center">
+                                    위치: 서울특별시 종로구<br>
+                                    입장료: 유료. 3000원<br>
+                                    전화번호: 02-3700-3900<br>
+                                    휴무일: 매주 화요일<br>
+                                    홈페이지: <a href="http://www.royalpalace.go.kr/"> 이동하기</a> <br>
+                                </span>
+                                <br><br>
+                            </div>
+
+
+                            <div class="box_frame" id="_15">
+                                <br>
+                                <span
+                                    style="font-family: 'Jua', serif; font-weight: bold; font-size: 1.5em;  color: black;"
+                                    align="center">
+                                    대표 Ex2. 정방폭포 <br><br>
+                                </span>
+                                <img src="img/jeju_jeongbang.jpg" width=200 style="border-radius: 0.5em"><br><br>
+                                <span style="font-family: 'Jua', serif;font-size: 1.2em;  color: black;" align="center">
+                                    위치: 제주특별자치도 서귀포시<br>
+                                    입장료: 유료. 2000원<br>
+                                    전화번호: 064-733-1530<br>
+                                    휴무일: 없음<br>
+                                    홈페이지: <a href="http://www.visitjeju.net"> 이동하기</a> <br>
+                                </span>
+                                <br><br>
+
+
+                            </div>
+
+                            <div class="box_frame" id="_15">
+                                <br>
+                                <span
+                                    style="font-family: 'Jua', serif; font-weight: bold; font-size: 1.5em;  color: black;"
+                                    align="center">
+                                    대표 Ex3. 캐리비안베이 <br><br>
+                                </span>
+                                <img src="img/yeongin_caribbean.jpg" width=200 style="border-radius: 0.5em"><br><br>
+                                <span style="font-family: 'Jua', serif;font-size: 1.2em;  color: black;" align="center">
+                                    위치: 경기도 용인시<br>
+                                    입장료: 유료. 42000원<br>
+                                    전화번호: 031-320-5000<br>
+                                    휴무일: 매주 화,수요일<br>
+                                    홈페이지: <a href="http://www.everland.com/caribbean/"> 이동하기</a> <br>
+                                </span>
+                                <br><br>
+
+
+                            </div>
+
+
+                            <div class="box_frame" id="_15">
+                                <br>
+                                <span
+                                    style="font-family: 'Jua', serif; font-weight: bold; font-size: 1.5em;  color: black;"
+                                    align="center">
+                                    대표 Ex4. 서울시립미술관 <br><br>
+                                </span>
+                                <img src="img/seoul_artmuseum.jpg" width=200 style="border-radius: 0.5em"><br><br>
+                                <span style="font-family: 'Jua', serif;font-size: 1.2em;  color: black;" align="center">
+                                    위치: 서울특별시 중구<br>
+                                    입장료: 무료. 특별전 유료<br>
+                                    전화번호: 02-2124-8800<br>
+                                    휴무일: 매주 월요일<br>
+                                    홈페이지: <a href="https://sema.seoul.go.kr/"> 이동하기</a> <br>
+                                </span>
+                                <br><br>
+
+
+                            </div>
+                        </div>
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">시도</th>
+                                    <th scope="col"> 관광지</th>
+                                    <th scope="col"> 티켓</th>
+                                    <th scope="col"> 전화번호</th>
+                                    <th scope="col"> 휴무일</th>
+                                    <th scope="col"> 웹사이트</th>
+                                    <th scope="col"> 개장/폐장 시간</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% for(var i=0; i<row.length; i++){ %>
+                                <tr class="table-primary">
+                                    <td><%= row[i].city%></td>
+                                    <td><%= row[i].name%></td>
+                                    <td><%= row[i].ticket%></td>
+                                    <td><%= row[i].phone_num%></td>
+                                    <td><%= row[i].holiday%></td>
+                                    <td><%= row[i].website%></td>
+                                    <td><%= row[i].open_closed%></td>
+                                </tr>
+                                <% } %>
+                            </tbody>
+                        </table>
+
+                </div>
+
+
+
+                <div class="tab-pane fade" id="review">
+                    <p>
+                        <div style="text-align:center">
+                            <span style="font-family: 'Jua', serif; font-size: 1.7em;  color: darkblue;" align="center">
+                                <%= name %> 님, 후기를 보고 싶은 관광지를 입력해주세요<br>
+                            </span>
+                        </div>
+
+
+
+                        <form class="mt-3" action="/home1
+                            " method="POST" novalidate>
+                            <div class="form-group row">
+                                <div class="col-7 mx-auto">
+                                    <center>
+                                        <input type="text" name="review_place" placeholder="관광지명"
+                                            style="font-family: 'Noto Serif KR', serif; ">
+                                        <button type="submit" class="btn btn-primary">
+                                            검색</button>
+                                            <button type="button" class="btn btn-warning" name="btn"
+                    onclick="$('body,html').animate({scrollTop:$('body').height()},150);">후기 쓰기</button>
+                                    </center>
+                                </div>
+                            </div>
+                        </form>
+
+                        <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th scope="col">user</th>
+                                    <th scope="col">관광지 </th>
+                                    <th scope="col">코멘트</th>
+                                    <th scope="col">점수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% for(var i=0; i<rows.length; i++){ %>
+                                <tr class="table-primary">
+                                    <td><%= rows[i].user_id%></td>
+                                    <td><%= rows[i].name%></td>
+                                    <td><%= rows[i].comment%></td>
+                                    <td><%= rows[i].score%></td>
+                                </tr>
+                                <% } %>
+                            </tbody>
+                        </table>
+
+
+                        <br>
+                        <br>
+                        <br>
+
+                        <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th scope="col">관광지</th>
+                                    <th scope="col"> 관광지 평균 </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% for(var i=0; i<rows2.length; i++){ %>
+                                <tr class="table-primary">
+                                    <td><%= rows2[i].name%></td>
+                                    <td><%= rows2[i].avgScore%></td>
+                                </tr>
+                                <% } %>
+                            </tbody>
+                        </table>
+                        <div class="card border-primary mb-3" style="max-width: 80rem;">
+                                <form id="bottom" action="/tour_comment_insert" method="POST" novalidate>
+                                    <fieldset>
+                                        &emsp;&emsp;<p1>후기를 작성해주세요</p1>
+                                        <div class="form-group row">
+                                            &emsp;&emsp;<p4>USER ID</p4>&emsp;&emsp;&emsp;
+                                            <div class="col-sm-13">
+                                                <%= name %>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            &emsp;<p4>방문했던 관광지 이름을 작성해주세요</p4>
+                                            <input type="text" class="form-control" name="hotelname" placeholder="hotel name">
+                                        </div>
+                                        <div class="form-group">
+                                            &emsp;<p4>1~5점으로 점수를 선택해주세요</p4>
+                                            &emsp;&emsp;<select class="form-control" name="score">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            &emsp;<p4>COMMENT</p4>&emsp;&emsp;&emsp;&emsp;
+                                            <textarea class="form-control" name="comment" rows="2"></textarea>
+                                        </div>
+                                        &emsp;<button type="submit" class="btn btn-primary" onClick="window.location.reload()"">후기 등록</button>
+                                        <br><br>
+                                    </fieldset>
+                                </form>
+                            </div>
+
+
+
+                        <br>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
