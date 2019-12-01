@@ -28,16 +28,16 @@ Node.js 툴을 이용하였고 HTML, CSS, JavaScript를 작성하였습니다.<B
 <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/home1.png" width=90% >
   <BR>
   
-<img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/home2_1.png" width=90% >
-<img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/home2_2.png" width=90% >
+<img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/home2_1.png" width=90% ><img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/home2_2.png" width=90% >
 <BR>
  <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/home2_3.png" width=90% ><BR><BR><BR>
  <BR>
   
   ### 3) City
  <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/city.png" width=90% ><BR><BR><BR>
-  <BR><BR>
-  
+  <BR>
+  <BR>
+   
  
   ### 4) Travel Agency
  <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/agency.png" width=90% ><BR><BR><BR>
