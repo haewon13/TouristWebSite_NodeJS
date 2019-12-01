@@ -28,8 +28,10 @@ Node.js 툴을 이용하였고 HTML, CSS, JavaScript를 작성하였습니다.<B
 <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/home1.png" width=90% >
   <BR>
   
-<img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/home2_1.png" width=48% >   <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/home2_3.png" width=48% >
- <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/home2_2.png" width=48% ><BR><BR><BR>
+<img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/home2_1.png" width=90% >
+<img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/home2_3.png" width=90% >
+<BR>
+ <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/home2_2.png" width=90% ><BR><BR><BR>
  <BR>
   
   ### 3) City
@@ -49,7 +51,7 @@ Node.js 툴을 이용하였고 HTML, CSS, JavaScript를 작성하였습니다.<B
  <BR>
   
   ### 7) Hotel
- <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/restaurant.png" width=90% ><BR><BR><BR>
+ <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/hotel.png" width=90% ><BR><BR><BR>
  <BR>
   
 
