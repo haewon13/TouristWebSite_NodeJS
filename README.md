@@ -8,13 +8,18 @@
 - **MySQL_Code**<BR>
 데이터 저장을 위해 local MySQL DB를 이용하였습니다. <BR>
 정보를 알려주는 사이트이므로 필요한 값들을 세팅하는 쿼리들을 구현하였습니다.<BR>
-
+<BR>
+ 
 - **NodeJS_Code**<BR>
 JavaScript 런타임. <BR>
-크게 views(ejs), router(서버역할의 main.js), config, img, node_modules(express, boostrap, ejs, jquery, mysql 등) 폴더로 이루어져있다. <BR>
+크게 views(ejs 파일들), router(서버역할의 main.js), config, img, node_modules(express, boostrap, ejs, jquery, mysql 등) 폴더로 이루어져있다. <BR>
 웹프레임워크 express에서 ejs(Embedded JavaScript, HTML 템플릿 엔진)을 사용했다. <BR>
-Node.js 툴을 이용하였고 HTML, CSS, JavaScript를 작성하였습니다.<BR><BR>
+Node.js 툴을 이용하였고 HTML, CSS, JavaScript를 작성하였습니다.<BR>
  <BR>
+ 
+ - mysql.js: dbconfig, mysql connection 변수, bodyParser, express, session 등의 변수들 세팅하고 ejs view engine과 static directory를 세팅하는 코드를 구현하였습니다. <BR>
+ <BR><BR>
+ 
  
 ### ● ER Diagram
  <img src= "https://github.com/haewon13/TouristWebSite_Node.js/blob/master/ERDiagram.png" width=90% > <BR><BR>
