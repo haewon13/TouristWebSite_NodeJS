@@ -2,10 +2,11 @@
 <h3>Local Tourist Attractions Guide Website using Node.js</h3>
 
 <BR>
+ ***
  
-  ### 폴더에 관한 설명입니다.
+### 폴더에 관한 설명입니다.
 
-#### **MySQL_Code**<BR>
+#### MySQL_Code<BR>
 데이터 저장을 위해 local MySQL DB를 이용하였습니다. <BR>
 정보를 알려주는 사이트이므로 필요한 값들을 세팅하는 쿼리들을 구현하였습니다.<BR>
 <BR>
