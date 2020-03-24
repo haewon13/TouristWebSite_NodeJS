@@ -3,23 +3,24 @@
 
 <BR>
  
-- [폴더에 관한 설명입니다.](#------------)
+- [Folders Description.](#folders-description)
   * [MySQL_Code<BR>](#mysql-code-br-)
   * [NodeJS_Code<BR>](#nodejs-code-br-)
 - [ER Diagram](#er-diagram)
 - [Implementation](#implementation)
-- [UI images](#ui-images)
-  * [1) Login / Register / Edit / Delete user information](#1--login---register---edit---delete-user-information)
-  * [2) Home page](#2--home-page)
-  * [3) City](#3--city)
-  * [4) Travel Agency](#4--travel-agency)
-  * [5) Restaurant](#5--restaurant)
-  * [6) Festival](#6--festival)
-  * [7) Hotel](#7--hotel)
+- [Pages](#pages)
+  * [Login / Register / Edit / Delete user information Page](#login---register---edit---delete-user-information-page)
+  * [Home Page](#home-page)
+  * [City Page](#city-page)
+  * [Travel Agency Page](#travel-agency-page)
+  * [Restaurant Page](#restaurant-page)
+  * [Festival Page](#festival-page)
+  * [Hotel Page](#hotel-page)
  
  ***
  
-### 폴더에 관한 설명입니다.
+### Folders Description.
+<BR>
 
 #### MySQL_Code<BR>
 데이터 저장을 위해 local MySQL DB를 이용하였습니다. <BR>
@@ -47,12 +48,14 @@ JavaScript 런타임. <BR>
 해당 웹사이트는 주로 국내 도시별 관광지 정보 검색과 근처의 식당과 호텔 추천 및 후기, 여행사 등에 관한 국내 관광지와 관련된 내용들을 소개하고 있습니다.<BR> 사용자는 회원 가입을 통해 후기를 남기고 열람할 수 있으며 정보 관리를 할 수 있습니다.<BR><BR><BR>
  ***
  
- ### UI images
- #### 1) Login / Register / Edit / Delete user information 
+ ### Pages
+ <BR>
+ 
+ #### Login / Register / Edit / Delete user information Page
 <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/login.png" width=25% ><img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/register.png" width=25% ><img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/edit.png" width=25% ><img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/delete.png" width=25% ><BR><BR><BR>
  <BR>
  
- #### 2) Home page
+ #### Home Page
 <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/home1.png" width=90% >
   <BR>
   
@@ -61,7 +64,7 @@ JavaScript 런타임. <BR>
  <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/home2_3.png" width=90% ><BR><BR><BR>
  <BR>
   
-  #### 3) City
+  #### City Page
  <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/city.png" width=90% ><BR><BR><BR>
   <BR>
   <BR>
@@ -69,19 +72,19 @@ JavaScript 런타임. <BR>
     
  <BR>
  
-  #### 4) Travel Agency
+  #### Travel Agency Page
  <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/agency.png" width=90% ><BR><BR><BR>
  <BR>
   
-  #### 5) Restaurant
+  #### Restaurant Page
  <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/restaurant.png" width=90% ><BR><BR><BR>
  <BR>
   
-  #### 6) Festival
+  #### Festival Page
  <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/festival.png" width=90% ><BR><BR><BR>
  <BR>
   
-  #### 7) Hotel
+  #### Hotel Page
  <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/hotel.png" width=90% ><BR><BR><BR>
  <BR>
   
