@@ -3,6 +3,9 @@
 
 <BR>
  
+ ## Table of Contents
+ <BR>
+ 
 - [Folders Description.](#folders-description)
   * [MySQL Code<BR>](#mysql-code)
   * [NodeJS Code<BR>](#nodejs-code)
@@ -22,13 +25,13 @@
 ## Folders Description.
 <BR>
 
-### MySQL_Code
+### MySQL Code
 <BR>
 데이터 저장을 위해 local MySQL DB를 이용하였습니다. <BR>
 정보를 알려주는 사이트이므로 필요한 값들을 세팅하는 쿼리들을 구현하였습니다.<BR>
 <BR>
  
-### NodeJS_Code
+### NodeJS Code
 <BR>
 JavaScript 런타임. <BR>
 **크게 views(ejs 파일들), router(서버역할의 main.js), config, img, node_modules(express) 폴더로 이루어져있습니다.** <BR>
