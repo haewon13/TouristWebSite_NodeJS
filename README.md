@@ -4,30 +4,30 @@
 <BR>
  
 - [Folders Description.](#folders-description)
-  * [MySQL_Code<BR>](#mysql-code-br-)
-  * [NodeJS_Code<BR>](#nodejs-code-br-)
+  * [MySQL Code<BR>](#mysql-code-br-)
+  * [NodeJS Code<BR>](#nodejs-code-br-)
 - [ER Diagram](#er-diagram)
 - [Implementation](#implementation)
 - [Pages](#pages)
-  * [Login / Register / Edit / Delete user information Page](#login---register---edit---delete-user-information-page)
-  * [Home Page](#home-page)
-  * [City Page](#city-page)
-  * [Travel Agency Page](#travel-agency-page)
-  * [Restaurant Page](#restaurant-page)
-  * [Festival Page](#festival-page)
-  * [Hotel Page](#hotel-page)
+    + [Login, Register, Edit, Delete User information Page](#login--register--edit--delete-user-information-page)
+    + [Home Page](#home-page)
+    + [City Page](#city-page)
+    + [Travel Agency Page](#travel-agency-page)
+    + [Restaurant Page](#restaurant-page)
+    + [Festival Page](#festival-page)
+    + [Hotel Page](#hotel-page)
  
  ***
  
-### Folders Description.
+## Folders Description.
 <BR>
 
-#### MySQL_Code<BR>
+### MySQL Code<BR>
 데이터 저장을 위해 local MySQL DB를 이용하였습니다. <BR>
 정보를 알려주는 사이트이므로 필요한 값들을 세팅하는 쿼리들을 구현하였습니다.<BR>
 <BR>
  
-#### NodeJS_Code<BR>
+### NodeJS Code<BR>
 JavaScript 런타임. <BR>
 **크게 views(ejs 파일들), router(서버역할의 main.js), config, img, node_modules(express) 폴더로 이루어져있습니다.** <BR>
 웹프레임워크 express에서 ejs(Embedded JavaScript, HTML 템플릿 엔진)을 사용했습니다. <BR>
@@ -39,19 +39,19 @@ JavaScript 런타임. <BR>
  
  ***
  
-### ER Diagram
+## ER Diagram
  <img src= "https://github.com/haewon13/TouristWebSite_Node.js/blob/master/ERDiagram.png" width=90% > <BR><BR>
  <BR><BR>
   ***
  
-### Implementation
+## Implementation
 해당 웹사이트는 주로 국내 도시별 관광지 정보 검색과 근처의 식당과 호텔 추천 및 후기, 여행사 등에 관한 국내 관광지와 관련된 내용들을 소개하고 있습니다.<BR> 사용자는 회원 가입을 통해 후기를 남기고 열람할 수 있으며 정보 관리를 할 수 있습니다.<BR><BR><BR>
  ***
  
- ### Pages
+ ## Pages
  <BR>
  
- #### Login / Register / Edit / Delete user information Page
+ #### Login, Register, Edit, Delete User information Page
 <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/login.png" width=25% ><img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/register.png" width=25% ><img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/edit.png" width=25% ><img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/delete.png" width=25% ><BR><BR><BR>
  <BR>
  
