@@ -4,12 +4,12 @@
 <BR>
  
 - [Folders Description.](#folders-description)
-  * [MySQL Code<BR>](#mysql-code-br-)
-  * [NodeJS Code<BR>](#nodejs-code-br-)
+  * [MySQL Code<BR>](#mysql-code)
+  * [NodeJS Code<BR>](#nodejs-code)
 - [ER Diagram](#er-diagram)
 - [Implementation](#implementation)
 - [Pages](#pages)
-    + [Login, Register, Edit, Delete User information Page](#login--register--edit--delete-user-information-page)
+    + [Login, Register, Edit, Delete User information Page](#login-register-edit-delete-user-information-page)
     + [Home Page](#home-page)
     + [City Page](#city-page)
     + [Travel Agency Page](#travel-agency-page)
@@ -22,12 +22,14 @@
 ## Folders Description.
 <BR>
 
-### MySQL Code<BR>
+### MySQL_Code
+<BR>
 데이터 저장을 위해 local MySQL DB를 이용하였습니다. <BR>
 정보를 알려주는 사이트이므로 필요한 값들을 세팅하는 쿼리들을 구현하였습니다.<BR>
 <BR>
  
-### NodeJS Code<BR>
+### NodeJS_Code
+<BR>
 JavaScript 런타임. <BR>
 **크게 views(ejs 파일들), router(서버역할의 main.js), config, img, node_modules(express) 폴더로 이루어져있습니다.** <BR>
 웹프레임워크 express에서 ejs(Embedded JavaScript, HTML 템플릿 엔진)을 사용했습니다. <BR>
@@ -51,7 +53,7 @@ JavaScript 런타임. <BR>
  ## Pages
  <BR>
  
- #### Login, Register, Edit, Delete User information Page
+ #### Login Register Edit Delete User information Page
 <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/login.png" width=25% ><img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/register.png" width=25% ><img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/edit.png" width=25% ><img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/delete.png" width=25% ><BR><BR><BR>
  <BR>
  
