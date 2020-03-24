@@ -34,6 +34,7 @@
 ### NodeJS Code
 <BR>
 JavaScript 런타임. <BR>
+ 
 **크게 views(ejs 파일들), router(서버역할의 main.js), config, img, node_modules(express) 폴더로 이루어져있습니다.** <BR>
 웹프레임워크 express에서 ejs(Embedded JavaScript, HTML 템플릿 엔진)을 사용했습니다. <BR>
 서버와의 데이터 통신으로는 Ajax 방식을 이용하였고 body-parser를 통해 post 요청 처리했습니다. <BR>
