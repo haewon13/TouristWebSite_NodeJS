@@ -17,7 +17,7 @@ JavaScript 런타임. <BR>
 Node.js 툴을 이용하였고 HTML, CSS, JavaScript를 작성하였습니다.<BR>
  <BR>
  
- - mysql.js: dbconfig, mysql connection 변수, bodyParser, express, session 등의 변수들 세팅하고 ejs view engine과 static directory를 세팅하는 코드를 구현하였습니다. <BR>
+ - +) mysql.js<BR>: dbconfig, mysql connection 변수, bodyParser, express, session 등의 변수들 세팅하고 ejs view engine과 static directory를 세팅하는 코드를 구현하였습니다. <BR>
  <BR><BR>
  
  
