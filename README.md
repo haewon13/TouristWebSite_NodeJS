@@ -9,7 +9,9 @@
 MySQL DB 쿼리들을 이용하였습니다.<BR>
 
 -NodeJS_Code<BR>
-웹사이트의 프론트엔드 코드입니다.<BR>
+JavaScript 런타임. <BR>
+크게 views(ejs), router(서버역할의 main.js), config, img, node_modules(express, boostrap, ejs, jquery, mysql 등) 폴더로 이루어져있다. <BR>
+웹프레임워크 express에서 ejs(Embedded JavaScript, HTML 템플릿 엔진)을 사용했다. <BR>
 Node.js 툴을 이용하였고 HTML, CSS, JavaScript를 작성하였습니다.<BR><BR>
  <BR>
  
