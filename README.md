@@ -24,10 +24,12 @@ JavaScript 런타임. <BR>
  
 ### ER Diagram
  <img src= "https://github.com/haewon13/TouristWebSite_Node.js/blob/master/ERDiagram.png" width=90% > <BR><BR>
- <BR>
+ <BR><BR>
+  ***
  
 ### Implementation
-해당 웹사이트는 주로 국내 도시별 관광지 정보 검색과 근처의 식당과 호텔 추천 및 후기, 여행사 등에 관한 국내 관광지와 관련된 내용들을 소개하고 있습니다.<BR> 사용자는 회원 가입을 통해 후기를 남기고 열람할 수 있으며 정보 관리를 할 수 있습니다.<BR><BR>
+해당 웹사이트는 주로 국내 도시별 관광지 정보 검색과 근처의 식당과 호텔 추천 및 후기, 여행사 등에 관한 국내 관광지와 관련된 내용들을 소개하고 있습니다.<BR> 사용자는 회원 가입을 통해 후기를 남기고 열람할 수 있으며 정보 관리를 할 수 있습니다.<BR><BR><BR>
+ ***
  
  ### UI images
  #### 1) Login / Register / Edit / Delete user information 
