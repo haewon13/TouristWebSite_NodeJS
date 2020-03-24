@@ -3,20 +3,19 @@
 
 <BR>
  
- - [TouristWebSite_Node.js](#touristwebsite-nodejs)
-    + [폴더에 관한 설명입니다.](#------------)
-      - [MySQL_Code<BR>](#mysql-code-br-)
-      - [NodeJS_Code<BR>](#nodejs-code-br-)
-    + [ER Diagram](#er-diagram)
-    + [Implementation](#implementation)
-    + [UI images](#ui-images)
-      - [1) Login / Register / Edit / Delete user information](#1--login---register---edit---delete-user-information)
-      - [2) Home page](#2--home-page)
-      - [3) City](#3--city)
-      - [4) Travel Agency](#4--travel-agency)
-      - [5) Restaurant](#5--restaurant)
-      - [6) Festival](#6--festival)
-      - [7) Hotel](#7--hotel)
+- [폴더에 관한 설명입니다.](#------------)
+  * [MySQL_Code<BR>](#mysql-code-br-)
+  * [NodeJS_Code<BR>](#nodejs-code-br-)
+- [ER Diagram](#er-diagram)
+- [Implementation](#implementation)
+- [UI images](#ui-images)
+  * [1) Login / Register / Edit / Delete user information](#1--login---register---edit---delete-user-information)
+  * [2) Home page](#2--home-page)
+  * [3) City](#3--city)
+  * [4) Travel Agency](#4--travel-agency)
+  * [5) Restaurant](#5--restaurant)
+  * [6) Festival](#6--festival)
+  * [7) Hotel](#7--hotel)
  
  ***
  
