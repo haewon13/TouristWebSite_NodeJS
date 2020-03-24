@@ -2,6 +2,22 @@
 <h3>Local Tourist Attractions Guide Website using Node.js</h3>
 
 <BR>
+ 
+ - [TouristWebSite_Node.js](#touristwebsite-nodejs)
+    + [폴더에 관한 설명입니다.](#------------)
+      - [MySQL_Code<BR>](#mysql-code-br-)
+      - [NodeJS_Code<BR>](#nodejs-code-br-)
+    + [ER Diagram](#er-diagram)
+    + [Implementation](#implementation)
+    + [UI images](#ui-images)
+      - [1) Login / Register / Edit / Delete user information](#1--login---register---edit---delete-user-information)
+      - [2) Home page](#2--home-page)
+      - [3) City](#3--city)
+      - [4) Travel Agency](#4--travel-agency)
+      - [5) Restaurant](#5--restaurant)
+      - [6) Festival](#6--festival)
+      - [7) Hotel](#7--hotel)
+ 
  ***
  
 ### 폴더에 관한 설명입니다.
@@ -11,11 +27,11 @@
 정보를 알려주는 사이트이므로 필요한 값들을 세팅하는 쿼리들을 구현하였습니다.<BR>
 <BR>
  
-#### **NodeJS_Code**<BR>
+#### NodeJS_Code<BR>
 JavaScript 런타임. <BR>
-**크게 views(ejs 파일들), router(서버역할의 main.js), config, img, node_modules(express) 폴더로 이루어져있다.** <BR>
-웹프레임워크 express에서 ejs(Embedded JavaScript, HTML 템플릿 엔진)을 사용했다. <BR>
-서버와의 데이터 통신으로는 Ajax 방식을 이용하였고 body-parser를 통해 post 요청 처리했다. <BR>
+**크게 views(ejs 파일들), router(서버역할의 main.js), config, img, node_modules(express) 폴더로 이루어져있습니다.** <BR>
+웹프레임워크 express에서 ejs(Embedded JavaScript, HTML 템플릿 엔진)을 사용했습니다. <BR>
+서버와의 데이터 통신으로는 Ajax 방식을 이용하였고 body-parser를 통해 post 요청 처리했습니다. <BR>
  <BR>
  
  - +) mysql.js<BR>: dbconfig, mysql connection 변수, bodyParser, express, session 등의 변수들 세팅하고 ejs view engine과 static directory를 세팅하는 코드를 구현하였습니다. <BR>
