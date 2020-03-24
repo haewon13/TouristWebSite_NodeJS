@@ -4,7 +4,6 @@
 <BR>
  
  ## Table of Contents
- <BR>
  
 - [Folders Description.](#folders-description)
   * [MySQL Code<BR>](#mysql-code)
@@ -21,6 +20,7 @@
     + [Hotel Page](#hotel-page)
  
  ***
+ <BR>
  
 ## Folders Description.
 <BR>
@@ -43,24 +43,29 @@ JavaScript 런타임. <BR>
  <BR><BR>
  
  ***
+ <BR>
  
 ## ER Diagram
  <img src= "https://github.com/haewon13/TouristWebSite_Node.js/blob/master/ERDiagram.png" width=90% > <BR><BR>
  <BR><BR>
   ***
+  <BR>
  
 ## Implementation
 해당 웹사이트는 주로 국내 도시별 관광지 정보 검색과 근처의 식당과 호텔 추천 및 후기, 여행사 등에 관한 국내 관광지와 관련된 내용들을 소개하고 있습니다.<BR> 사용자는 회원 가입을 통해 후기를 남기고 열람할 수 있으며 정보 관리를 할 수 있습니다.<BR><BR><BR>
  ***
+ <BR>
  
  ## Pages
  <BR>
  
  #### Login Register Edit Delete User information Page
+ <BR>
 <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/login.png" width=25% ><img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/register.png" width=25% ><img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/edit.png" width=25% ><img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/delete.png" width=25% ><BR><BR><BR>
  <BR>
  
  #### Home Page
+ <BR>
 <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/home1.png" width=90% >
   <BR>
   
@@ -70,6 +75,7 @@ JavaScript 런타임. <BR>
  <BR>
   
   #### City Page
+  <BR>
  <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/city.png" width=90% ><BR><BR><BR>
   <BR>
   <BR>
@@ -78,18 +84,22 @@ JavaScript 런타임. <BR>
  <BR>
  
   #### Travel Agency Page
+  <BR>
  <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/agency.png" width=90% ><BR><BR><BR>
  <BR>
   
   #### Restaurant Page
+  <BR>
  <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/restaurant.png" width=90% ><BR><BR><BR>
  <BR>
   
   #### Festival Page
+  <BR>
  <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/festival.png" width=90% ><BR><BR><BR>
  <BR>
   
   #### Hotel Page
+  <BR>
  <img src="https://github.com/haewon13/TouristWebSite_Node.js/blob/master/UI_images/hotel.png" width=90% ><BR><BR><BR>
  <BR>
   
