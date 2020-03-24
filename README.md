@@ -20,6 +20,7 @@ JavaScript 런타임. <BR>
  - +) mysql.js<BR>: dbconfig, mysql connection 변수, bodyParser, express, session 등의 변수들 세팅하고 ejs view engine과 static directory를 세팅하는 코드를 구현하였습니다. <BR>
  <BR><BR>
  
+ ***
  
 ### ER Diagram
  <img src= "https://github.com/haewon13/TouristWebSite_Node.js/blob/master/ERDiagram.png" width=90% > <BR><BR>
